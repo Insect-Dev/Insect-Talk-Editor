@@ -1,0 +1,28 @@
+.react-flow__node {
+    @apply bg-white shadow-lg rounded-full border-none p-2 w-40 text-xs text-center;
+}
+
+.react-flow__node.selected {
+    @apply border border-primary-600;
+}
+
+.react-flow__handle {
+    @apply absolute pointer-events-none min-w-[5px] w-[6px] min-h-[5px] h-[6px] rounded-full bg-white shadow-md shadow-primary-500 border-primary-600 border;
+}
+
+.react-flow__attribution {
+    @apply hidden;
+}
+
+.react-flow__edge-path,
+.react-flow__connection-path {
+    @apply stroke-slate-500 stroke-1 fill-none;
+}
+
+.react-flow__controls {
+    @apply shadow-lg bg-transparent rounded-full border-none;
+}
+
+.react-flow__controls-button {
+    @apply border-none bg-white box-content flex justify-center items-center w-4 h-4 cursor-pointer select-none p-2 first:rounded-t-full last:rounded-b-full transition-colors hover:bg-primary-100;
+}
